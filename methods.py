@@ -9,13 +9,12 @@ pygame.init()
 # Function for home screen
 def home_page():
     mouse_position = pygame.mouse.get_pos()
-    home_font = pygame.font.Font('college.ttf', 100)
+    home_font = pygame.font.Font('college.ttf', 140)
     play_font = pygame.font.Font('college.ttf', 50)
-    screen.blit(home_font.render("-------------", True, (255, 255, 255)), (80, 20))
-    screen.blit(home_font.render("SPACE", True, (255, 255, 255)), (260, 90))
-    screen.blit(home_font.render("INVADERS", True, (255, 255, 255)), (190, 200))
-    screen.blit(home_font.render("GAME", True, (255, 255, 255)), (280, 300))
-    screen.blit(home_font.render("-------------", True, (255, 255, 255)), (80, 390))
+    screen.blit(home_font.render("-----------", True, (255, 255, 255)), (25, 20))
+    screen.blit(home_font.render("SPACE", True, (255, 255, 255)), (210, 130))
+    screen.blit(home_font.render("INVADERS", True, (255, 255, 255)), (100, 270))
+    screen.blit(home_font.render("-----------", True, (255, 255, 255)), (25, 390))
     screen.blit(play_font.render("PLAY", True, (0, 255, 0)), (335, 490))
     if mouse_position[0]>=332 and mouse_position[0]<=450 and mouse_position[1]>=488 and mouse_position[1]<=540:
         screen.blit(play_font.render("PLAY", True, (255, 255, 0)), (335, 490))
